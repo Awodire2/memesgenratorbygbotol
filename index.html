@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <div class="file-upload">
+        <input type="file" id="imageUpload" accept="image/*">
+    </div>
+    <canvas id="memeCanvas"></canvas>
+    
+    <div class="controls">
+        <label for="text">Enter Text:</label>
+        <input type="text" id="text" placeholder="Enter text">
+        
+        <label for="textColor">Choose Text Color:</label>
+        <input type="color" id="textColor">
+        
+        <label for="fontSize">Font Size:</label>
+        <input type="number" id="fontSize" value="40" min="10" max="100">
+        
+        <label for="fontWeight">Font Weight:</label>
+        <select id="fontWeight">
+            <option value="300">Thin</option>
+            <option value="400" selected>Normal</option>
+            <option value="700">Bold</option>
+        </select>
+        
+        <button id="generateMeme">Generate Meme</button>
+        <button id="addText">Add Text</button>
+        <button id="downloadMeme">Download Meme</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
